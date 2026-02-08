@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Office Character Guessing Game | Free Online Quiz</title>
+  <meta name="description" content="Challenge yourself with this fun, free online guessing game featuring characters from the hit TV show The Office. Identify blurred images and get 5 correct in a row to win!">
+  <meta name="keywords" content="the office guessing game, the office quiz, the office characters quiz, michael scott, dwight schrute, jim halpert, pam beesly, dunder mifflin, tv show game, free online game">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Landing Page -->
+  <div id="landing" class="screen active">
+    <div class="container">
+      <h1><span class="title-accent">The Office</span><br>Character Guessing Game</h1>
+      <p class="tagline">Test your Dunder Mifflin knowledge!</p>
+      <p class="instructions">Identify the blurred character.<br>Get <strong>5 correct in a row</strong> to win.</p>
+      <input type="text" id="player-name" placeholder="Enter your name (required)" autocomplete="off">
+      <p id="name-error" class="error"></p>
+      <button id="start-game">Start Game</button>
+    </div>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="game" class="screen">
+    <div class="container">
+      <header>
+        <h2>Hey <span id="name-display"></span>!</h2>
+        <p class="game-info">Guess the Dunder Mifflin employee</p>
+        <div id="progress-bar">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </header>
+      <div class="question">
+        <img id="character-img" alt="Blurry character">
+        <div id="options"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Win Modal -->
+  <div id="win-modal" class="modal">
+    <div class="modal-content">
+      <h2>Congratulations!</h2>
+      <p id="win-message" class="big-message">You did it, you won!</p>
+      <p class="extra-message">You're a true Scranton expert.</p>
+      <button class="restart-btn">Play Again</button>
+    </div>
+  </div>
+
+  <!-- Lose Modal -->
+  <div id="lose-modal" class="modal">
+    <div class="modal-content">
+      <h2>Suck it.. loser!</h2>
+      <img src="assets/dwight_loser.jpg" alt="Dwight Schrute" class="dwight-img">
+      <p class="extra-message">Better luck next time.</p>
+      <button class="restart-btn">Try Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
