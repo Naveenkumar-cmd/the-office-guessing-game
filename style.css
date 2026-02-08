@@ -96,6 +96,8 @@ button:hover {
 
 .screen.active {
   display: flex;
+  align-items: center;     /* centers vertically */
+  justify-content: center; /* centers horizontally */
 }
 
 header h2 {
@@ -256,4 +258,5 @@ header h2 {
   .dot { width: 36px; height: 36px; }
   #options button { padding: 18px; font-size: 1.15rem; }
   .modal-content { padding: 40px 25px; }
+
 }
