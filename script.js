@@ -14,7 +14,12 @@ const characters = [
   { name: "Kelly Kapoor", img: "assets/characters/kelly_kapoor.jpg" },
   { name: "Andy Bernard", img: "assets/characters/andy_bernard.jpg" },
   { name: "Ryan Howard", img: "assets/characters/ryan_howard.jpg" },
-  { name: "Jan Levinson", img: "assets/characters/jan_levinson.jpg" }
+  { name: "Jan Levinson", img: "assets/characters/jan_levinson.jpg" },
+  { name: "Meredith Palmer", img: "assets/characters/meredith_palmer.jpg" },
+  { name: "Darryl Philbin", img: "assets/characters/darryl_philbin.jpg" },
+  { name: "Erin Hannon", img: "assets/characters/erin_hannon.jpg" },
+  { name: "Gabe Lewis", img: "assets/characters/gabe_lewis.jpg" },
+  { name: "Robert California", img: "assets/characters/robert_california.jpg" }
 ];
 
 let playerName = "";
@@ -146,4 +151,5 @@ function restart() {
 document.getElementById('start-game').addEventListener('click', startGame);
 document.querySelectorAll('.restart-btn').forEach(btn => {
   btn.addEventListener('click', restart);
+
 });
